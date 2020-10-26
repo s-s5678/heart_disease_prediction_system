@@ -3,24 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pred_style.css">
 </head>
 <body>
-<p> Please provide the required values</p>
+  <div class="regform">
+        <h1>Please fill in the Details</h1>
+  </div>
+  <div class="main">
 <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="age" placeholder="age" required="required" />
-        <input type="text" name="sex" placeholder="sex" required="required" />
-		<input type="text" name="chest-pain" placeholder="chest-pain" required="required" />
-        <input type="text" name="resting blood pressure" placeholder="resting blood pressure" required="required" />
-        <input type="text" name="serum cholestrol" placeholder="serum cholestrol" required="required" />
-        <input type="text" name="fasting blood sugar" placeholder="fasting blood sugar" required="required" />
-        <input type="text" name="ecg" placeholder="ecg" required="required" />
-        <input type="text" name="mnimum heart rate" placeholder="mnimum heart rate" required="required" />
-        <input type="text" name="exercise induced angina" placeholder="exercise induced angina" required="required" />
-    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    	<p>
+        <label class="age_label" for="age"></label>
+        <input class="age" type="number" id="age" placeholder="Age" required="required" />
+      </p> 
+      <div class="gen">Select your gender:</div>
+       
+             <input class="radio-one" type="radio" id="male" name="sex" value="male" checked>
+             <label class="radio" for="male">Male</label>
+        
+
+         
+             <input class="radio-two" type="radio" id="female" name="sex" value="female">
+             <label class="radio" for="female">Female</label>
+        
+      
+
+          <div class="hcp">Having Chest pain?</div>
+		        
+          
+             <input class="radio-one" type="radio" id="yes" name="y/n" value="yes" checked>
+             <label class="radio" for="yes">Yes</label>
+         
+        
+             <input class="radio-two" type="radio" id="no" name="y/n" value="no">
+             <label class="radio" for="no">No</label>
+           
+
+      <div>
+        <label class="bp_label" for="resting blood pressure"></label>
+        <input class="bp" type="number" id="resting bp" name="resting blood pressure" placeholder="Resting blood pressure" required="required" />
+      </div>
+      <p>
+        <input class="chl" type="number" id="cholestrol" name="serum cholestrol" placeholder="Serum cholestrol" required="required" />
+      </p>
+      <p>
+        <input class="sugar" type="number" id="sugar" name="fasting blood sugar" placeholder="Fasting Blood Sugar" required="required" />
+      </p>
+      <p>
+        <input class="ecg" type="number" id="ecg" name="ecg" placeholder="Ecg" required="required" />
+      </p>
+      <p>
+        <input class="mhr" type="number" id="mhr" name="mnimum heart rate" placeholder="Minimum heart rate" required="required" />
+      </p>
+      <p>
+        <input class="eia" type="number" id="eia" name="exercise induced angina" placeholder="Exercise Induced Angina" required="required" />
+      </p>
+      <div class="button">
+      <button type="submit">Predict</button>
+      </div>
     </form>
    <br>
    <br>
    {{ prediction_text }}
    {{ prediction_chances }}
+</div>
 </body>
 </html>
