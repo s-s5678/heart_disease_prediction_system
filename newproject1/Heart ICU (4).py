@@ -17,7 +17,7 @@ df=pd.read_csv('heart.csv')
 # In[34]:
 
 
-df=df.drop(['slope','oldpeak','slope','ca','thal'],axis=1)
+df=df.drop(['oldpeak','slope'],axis=1)
 
 
 # # Training
@@ -38,19 +38,19 @@ y = df["target"].values
 # In[37]:
 
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
 # In[38]:
 
 
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import RobustScaler
 
 
 # In[39]:
 
 
-sc=StandardScaler()
+sc=RobustScaler()
 X_train=sc.fit_transform(X_train)
 X_test=sc.fit_transform(X_test)
 
