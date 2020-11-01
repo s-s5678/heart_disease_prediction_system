@@ -4,9 +4,9 @@ This project consists of a ML model in a fully responsive web page that predicts
 
 ## DESCRIPTION
 
-*Development in Health Sector and Disease prediction Models are in high demand.
-Our Prediction Model takes various inputs from users and predicts not only the disease but also gives a personalized diet solution.
-So our model 'The heartunerring' gives a approach to solve the heart related errors to help people achieve a healthy heart.let's discuss in detail:*
+*Development in Health Sector and Disease prediction Models are in high demand.<br>
+Our Prediction Model takes various inputs from users and predicts not only the disease but also gives a personalized diet solution.<br>
+So our model 'The heartunerring' gives a approach to solve the heart related errors to help people achieve a healthy heart.let's discuss in detail:<br>*
 1. **User-dashboard page:**
 The user dashboard takes various inputs like
  - Age
@@ -20,7 +20,7 @@ The user dashboard takes various inputs like
  - Exercise induced Angina
 2. **Regression Models:**
 3. **Disease prediction System:** The user inputs taken, and the model is trained to predict the heart related diseases and complications.
-4. **Graphical Diet solutions:**
+4. **Graphical Diet solutions:**<br>
 Click here to download the dataset and see it first.
 
 ## Dependencies
