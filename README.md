@@ -18,9 +18,9 @@ The user dashboard takes various inputs like
 - Ecg
 - Miniumum Heart rate
 - Exercise induced Angina
-2. **Regression Models:**
+2. **Regression Models:** The various data sets are used to make regression models.<br>
 3. **Disease prediction System:** The user inputs taken, and the model is trained to predict the heart related diseases and complications.
-4. **Graphical Diet solutions:** The<br>
+4. **Graphical Diet solutions:** <br>
 ![name-of-you-image](https://github.com/s-s5678/heart_disease_prediction_system/blob/main/graphs/20201101_093351.jpg?raw=true)
 ![name-of-you-image](https://github.com/s-s5678/heart_disease_prediction_system/blob/main/graphs/20201101_093414.jpg?raw=true)
 ![name-of-you-image](https://github.com/s-s5678/heart_disease_prediction_system/blob/main/graphs/20201101_093434.jpg?raw=true)
