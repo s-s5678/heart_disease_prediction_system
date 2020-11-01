@@ -6,7 +6,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel="stylesheet" href="{{url_for('static',filename = 'main.css')}}">
+<link rel="stylesheet" href="./main.css">
  
 </head>
 <body>
@@ -32,7 +32,7 @@
     <div><i class="fa fa-code" aria-hidden="true"></i></div>
     <div class="smallsep heading"></div>
     <h1 class="heading">Heart Disease Prediction System</h1>
-    <h2 class="heading">Along with correlated complications and preventive measures</h2>
+    <h2 class="heading"></h2>
     <a class="smoothscroll" href="#about">
     <div class="mouse">
       <div class="wheel"></div>
@@ -62,12 +62,12 @@
       </div>
       <div class="row">
         <div class="six columns">
-          <h3><i class="fa fa-bullseye" aria-hidden="true"></i>Correlation</h3>
-          <p>The prediction results not only provides the disease prediction but also gives the information regarding the various related complications along with a graphical analysis to predict the degree of danger alert.</p>
+          <h3><i class="fa fa-bullseye" aria-hidden="true"></i>Prediction</h3>
+          <p>The prediction results not only provides the disease prediction but also gives the information regarding the various related complications to predict the degree of danger alert.</p>
         </div>
         <div class="six columns">
           <h3><i class="fa fa-fighter-jet" aria-hidden="true"></i>Our Goal</h3>
-          <p>Our goal is to give the user the preventive measures,when to visit the doctor,the required diet and exercise.</p>
+          <p>Our goal is to provide prediction system for heart disease </p>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@
     <div class="row">
       <div class="one-third column">
         <h3>Design</h3>
-        <p>Our system takes user inputs in the user dashboard section and then the final graphical analysis and preventive measures are given.</p>
+        <p>Our system takes user inputs in the user dashboard section and then the final prediction results are given.</p>
       </div>
       </div>
     </div>
@@ -97,39 +97,11 @@
     <div class="col-md-3">
       <div class="cardholder">
         <div class="card">
-          <a href={{url_for('prediction')}}><img src="http://cdn.onlinewebfonts.com/svg/img_245789.png" /></a>
-            <p class="desc">PREDICT DISEASE</p>
-       </div>
-      </div>
-    </div>
-    
-    <div class="col-md-3">
-      <div class="cardholder">
-        <div class="card">
-           <img src="https://th.bing.com/th/id/OIP.-pP5eiw1ZvJekxKgjJzz8QHaEw?pid=Api&rs=1" />
-          <p class="desc">GRAPHICAL ANALYSIS</p>
+          <img src="http://cdn.onlinewebfonts.com/svg/img_245789.png" />
+      <p class="desc">PREDICT DISEASE</p>
         </div>
       </div>
     </div>
-    
-    <div class="col-md-3">
-      <div class="cardholder">
-        <div class="card">
-          <img src="https://images.agoramedia.com/everydayhealth/gcms/DOWN-SYNDROME-GUIDE-Complications-722x406.jpg" />
-      <p class="desc">COMPLICATIONS AND ABNORMALITIES</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-3">
-      <div class="cardholder">
-        <div class="card">
-          <img src="https://th.bing.com/th/id/OIP.y9AwjA0tKdQ65BrwlUIxSAHaE8?pid=Api&rs=1" />
-      <p class="desc">PREVENTIVE MEASURE,WHEN TO VISIT A DOCTOR AND DIET</p>
-        </div>
-      </div>
-    </div>
-    
     
   </div>
 </div>
@@ -176,7 +148,7 @@
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-  <script  type = "text/javsscript" src="{{url_for('static',filename = 'main.js')}}"></script>
+  <script  src="main.js"></script>
  
 </body>
 </html>
