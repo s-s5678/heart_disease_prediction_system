@@ -16,29 +16,19 @@
         <label class="age_label" for="age"></label>
         <input class="age" type="number" id="age" placeholder="Age" required="required" />
       </p> 
-      <div class="gen">Select your gender:</div>
-       
-             <input class="radio-one" type="radio" id="male" name="sex" value="male" checked>
-             <label class="radio" for="male">Male</label>
-        
+      <div class="gen">Gender: 0:male 1:female</div>
+       <div>
+        <label class="gender" for="gender"></label>
+        <input class="gender" type="number" min="0" max="1" id="gender" name="gender" placeholder="gender" required="required" />
+      </div>
+            
 
-         
-             <input class="radio-two" type="radio" id="female" name="sex" value="female">
-             <label class="radio" for="female">Female</label>
-        
-      
-
-          <div class="hcp">Having Chest pain?</div>
-		        
+      <div class="hcp">Having Chest pain? 0:no 1:yes</div>
+      <div>
+        <label class="Chestpain" for="gender"></label>
+        <input class="Chestpain" type="number" min="0" max="1" id="Chestpain" name="Chestpain" placeholder="Chestpain" required="required" />
+      </div>
           
-             <input class="radio-one" type="radio" id="yes" name="y/n" value="yes" checked>
-             <label class="radio" for="yes">Yes</label>
-         
-        
-             <input class="radio-two" type="radio" id="no" name="y/n" value="no">
-             <label class="radio" for="no">No</label>
-           
-
       <div>
         <label class="bp_label" for="resting blood pressure"></label>
         <input class="bp" type="number" id="resting bp" name="resting blood pressure" placeholder="Resting blood pressure" required="required" />
