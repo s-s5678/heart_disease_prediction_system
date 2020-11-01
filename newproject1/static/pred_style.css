@@ -74,7 +74,27 @@
        padding: 0 22px;
        font-size: 16px;
        
-       }     
+       }  
+.major-vessels{
+       position: relative;
+       left:200px;
+       top:5px;
+       line-height: 40px;
+       border-radius: 6px;
+       padding: 0 22px;
+       font-size: 16px;
+       
+       } 
+.thal{
+       position: relative;
+       left:200px;
+       top:5px;
+       line-height: 40px;
+       border-radius: 6px;
+       padding: 0 22px;
+       font-size: 16px;
+       
+       }    
 
 
 .age{
